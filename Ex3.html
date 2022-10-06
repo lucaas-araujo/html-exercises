@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Exercicio 03</title>
+    </head>
+    <body>
+        <label>Digite o ano atual: </label>
+        </br>
+        <input id="ano" value="">
+        </br>
+        <label>Digite o ano em que você nasceu: </label>
+        </br>
+        <input id="ano_nasc" value="">
+        </br>
+        <button onclick="subtração()" class="button">Quantos eu anos tenho?</button> <!--DUVIDA: Como dar um espço ente o input acima e o botão-->
+        </br>
+    </body>
+
+    <script>
+
+        function subtração() {
+            
+            var ano = Number(document.getElementById("ano").value); 
+            var ano_nasc = Number(document.getElementById("ano_nasc").value);
+            var result = ano - ano_nasc;
+            alert("Você tem: " + result + " anos. Correto?");
+        }
+    </script>
+</html>
