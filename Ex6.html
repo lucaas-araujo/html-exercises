@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Exercicio 06</title>
+    </head>
+    <body>
+        <h1>Exercicio:</h1>
+        <h2>Você deseja fazer um emprestimo em um banco.</h2>
+        <h3>E você podera escolher o valor do emprestimo,  e em quantas parcelas deseja pagar. Mas o banco cobrara 20% de JUROS: </h3>
+        <label>Qual o valor do emprestimo? </label>
+        <input id="emprestimo" value="">
+    </br>
+        <label>Em quantas parcelas? </label>
+        <input id="parcelas" value="">
+        <button onclick="porcentagem()" class="button">Calcular Juros</button>
+</br>
+    </body>
+
+    <script>
+        function porcentagem() {
+
+            var emprestimo = Number(document.getElementById("emprestimo").value);
+            var parcelas = Number(document.getElementById("parcelas").value);
+            var juros = emprestimo * 20/100
+            var juros_total = (emprestimo + juros) / parcelas
+            var juros_final = juros_total * parcelas - emprestimo
+            alert("Vou pagar um total de R$" + juros_final + " de JUROS. Em " + parcelas + " parcelas.")
+
+        }
+    </script>
+</html>

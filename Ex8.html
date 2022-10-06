@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Exercicio 08</title>
+    </head>
+    <body>
+        <label>Digite um número</label>
+        <input id="n" value="">
+        <button onclick="divisao()" class="button">Calcular</button>
+        </br>
+    </body>
+
+    <script>
+
+        function divisao() {
+
+            var n = document.getElementById("n").value;
+            var restoDivisao = n % 2;
+            if (restoDivisao == 0) {
+                alert("O número digitado é PAR. Correto?")
+            } else {
+                alert("O número digitado é IMPAR. Correto?")
+            }
+        } 
+    </script>
+
+</html>

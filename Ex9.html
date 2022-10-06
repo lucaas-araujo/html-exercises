@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Exercicio 09</title>
+    </head>
+    <body>
+        <label>Digite seu peso</label>
+        <input id="peso" value="">
+    </br>
+        <label>Digite sua altura</label>
+        <input id="altura" value="">
+        <button onclick="divisao()" class="button">Calcular IMC</button>
+        </br>
+    </body>
+
+    <script>
+
+        function divisao() {
+            
+            var peso = Number(document.getElementById("peso").value);
+            var altura = Number(document.getElementById("altura").value);
+            var imc = peso / (altura ^ 2)
+            if ( imc >= 18.5) {
+                alert("Você esta dento do IMC correto")
+            } else if (imc = 25) {
+                alert("Você esta dento do IMC correto")
+            } else {
+                alert("Sinto muito, mas Você não esta dentro do IMC")
+        } 
+    </script>
+    
+</html>

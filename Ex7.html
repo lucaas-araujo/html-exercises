@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Exercicio 07</title>
+    </head>
+    <body>
+        <label>Informe o ano atual</label>
+        <input id="ano_atual" value="">
+    </br>
+        <label>Informe seu ano de nascimento</label>
+        <input id="ano_nasc" value="">
+        <button onclick="subtração()" class="button">Calcular idade</button>
+    </br>
+    </body>
+
+    <script>
+        function subtração() {
+
+            var ano_atual = Number(document.getElementById("ano_atual").value);
+            var ano_nasc = Number(document.getElementById("ano_nasc").value);
+            var result = ano_atual - ano_nasc
+            if (result >= 18) {
+                alert("Entrada autorizda")
+            } else {
+                alert("Entrada Negada.")
+            }
+        }
+    </script>
+
+</html>
