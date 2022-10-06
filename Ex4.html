@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Exercicio 04</title>
+    </head>
+    <body>
+        <label>Quantos reais tenho? R$ </label>
+        <input id="reais" value="">
+        </br>
+        <label>Qual a cotação do dolar atual? US$ </label>
+        <input id="dolar" value="">
+        </br>
+        <button onclick="subtração()" class="button">Calcular</button>
+        </br>
+    </body>
+
+    <script>
+
+        function subtração() {
+            
+            var reais = Number(document.getElementById("reais").value); 
+            var dolar = Number(document.getElementById("dolar").value);
+            var result = reais / dolar;
+            alert("Com R$ " + reais + " reais. Posso ter US$ " + result + " Dólares.");
+        }
+    </script>
+</html>
