@@ -1,0 +1,24 @@
+<!--EXERCICIO: AO TRAZER PRODUTOS DOS EUA, É COBRADO 60% DE IMPOSTO EM CIMA DO VALOR TOTAL DOS PRODUTOS-->
+<html>
+    <head>
+        <title>Exercicio 05</title>
+    </head>
+<body>
+    <h1>Exercicio:</h1>
+    <h2>Você realizou uma viagem aos EUA. Fez algumas compras e na hora de voltar tem suas compras taxadas a 60%:</h2>
+    <label>Qual o valor total dos produtos? U$</label>
+    <input id="preço" value="">
+    </br>
+    <button onclick="porcentagem()" class="button">Calcular Imposto</button>
+</body>
+
+<script>
+
+    function porcentagem() {
+
+        var preço = Number(document.getElementById("preço").value);
+        var result = preço * 60/100
+        alert("O valor dos produtos foi de " + preço + " dólares. E o imposto sobre os produtos sera de: " + result + " Reais.");
+    } 
+</script>
+</html>
